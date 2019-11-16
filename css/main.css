@@ -14,6 +14,32 @@ h1 {
   animation: fading 3s linear forwards;
 }
 
+@keyframes fading {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+}
+
+#narwhal-body {
+  animation: offset 2s linear forwards;
+  stroke-dasharray: 1981.415px;
+  stroke-dashoffset: 1981.415px;
+}
+
+@keyframes offset {
+
+  to {
+    stroke-dashoffset: 0;
+  }
+
+}
+
 #rainbow-red {
   animation: offset 3500ms linear forwards;
   stroke-dasharray: 1243.044px;
@@ -54,30 +80,4 @@ h1 {
   animation: offset 3500ms linear forwards;
   stroke-dasharray: 1917.692px;
   stroke-dashoffset: 1917.692px;
-}
-
-#narwhal-body {
-  animation: offset 2s linear forwards;
-  stroke-dasharray: 1981.415px;
-  stroke-dashoffset: 1981.415px;
-}
-
-@keyframes fading {
-
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-}
-
-@keyframes offset {
-
-  to {
-    stroke-dashoffset: 0;
-  }
-
 }
